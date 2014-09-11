@@ -1,6 +1,9 @@
 
 public class Text {
 
+    /**
+     * Paragraph 1 of background.
+     */
     public static final String BACKGROUND_1 =
             "You are an adventurer in a world of monsters and magic, "
             + "living by quickness of wit and skill of sword. "
@@ -17,6 +20,9 @@ public class Text {
             + "spreads through the citizens like wildfire, "
             + "as few of them have ever met a dragonslayer before.";
 
+    /**
+     * Paragraph 2 of background.
+     */
     public static final String BACKGROUND_2 = "One evening, after a "
             + "long walk through the outlands, "
             + "you arrive at Silverton, which lies at the crossroads "
@@ -25,6 +31,9 @@ public class Text {
             + "seen rumbling slowly through the town laden with herbs, "
             + "spices, silks, metalware and exotic foods from far-off lands.";
 
+    /**
+     * Paragraph 3 of background.
+     */
     public static final String BACKGROUND_3 =
             "Over the years Silverton has prospered as a result of the "
             + "rich merchants and traders stopping "
@@ -41,6 +50,9 @@ public class Text {
             + "you decide to stay in Silverton for the night to find "
             + "out who or what is troubling the people.";
 
+    /**
+     * Paragraph 4 of background.
+     */
     public static final String BACKGROUND_4 =
             "As you walk down the main street, "
             + "a single note from a bell rings out from a tall tower ahead. "
@@ -82,6 +94,9 @@ public class Text {
             + "'Stranger, I must speak with you. Please sit down. "
             + "It is important that I speak with you.'";
 
+    /**
+     * Paragraph 5 of background.
+     */
     public static final String BACKGROUND_5 = 
             "When he turns to the innkeeper to snap "
             + "his fingers for food and drink, "
@@ -134,6 +149,9 @@ public class Text {
             + "entering homes through open windows, "
             + "and killing the poor people inside.";
     
+    /**
+     * Paragraph 6 of background.
+     */
     public static final String BACKGROUND_6 = 
             "In the morning we counted twenty-three dead. "
             + "So we barred our windows and bolted our doors, "
@@ -162,6 +180,9 @@ public class Text {
             + "Take these 30 Gold Pieces for your journey, "
             + "and take this sword to use and keep.'";
 
+    /**
+     * Paragraph 7 of background.
+     */
     public static final String BACKGROUND_7 =
             "As Owen Carralif rises, he pulls back his scarlet robe, "
             + "revealing the finest broadsword you have ever seen. "
@@ -178,6 +199,9 @@ public class Text {
             + "I shall be forced to stay the night here also, "
             + "so let's drink to our destiny and may the gods be with us.'";
 
+    /**
+     * Paragraph 8 of background.
+     */
     public static final String BACKGROUND_8 =
             "For the next hour Owen talks about your coming journey, "
             + "explaining in detail how to reach Port Blacksand. "
