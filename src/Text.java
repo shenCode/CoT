@@ -1,6 +1,100 @@
 
 public class Text {
+	
+	/*
+	 * Basic rule of this game book
+	 */
+	public static final String RULE_1 = 
+			"HOW TO FIGHT THE CREATURES OF THE CITY OF THIEVES"
+			+ "	Before embarking on your adventure, you must first determine your own strengths "
+			+ "and weaknesses by rolling dice to determine your initial scores."
+			+ " On pages 18-19 there is an Adventure Sheet which you may use to"
+			+ " record the details of an adventure. On it you will find boxes for"
+			+ " recording your SKILL, STAMINA, and LUCK scores. "
+			+ "You are advised to either record your scores on the  Adventure Sheet"
+			+ "  in pencil, or make photocopies of the sheet to use in future adventures.";
 
+	/*
+	 * Basic rule of Skill, Stamina and Luck
+	 */
+	public static final String RULE_2 = 
+			"Skill, Stamina and Luck\n"
+			+ "To determine your Initial  SKILL, STAMINA and LUCK scores \n "
+			+ "• Roll one die. Add 6 to this number and enter this total in the"
+			+ " SKILL box on the Adventure Sheet."
+			+ "• Roll both dice. Add 12 to the number rolled and enter"
+			+ " this total in the STAMINA box."
+			+ "• Roll one die, add 6to this number and enter this total in the LUCK box.";
+	/*
+	 * Basic description for LUCK
+	 */
+	public static final String RULE_3 = 
+			"Sometimes you will told to Test your LUCK."
+			+ " As you will discover, using LUCK is a risky business."
+			+ " The way you Test your LUCK is as follow:"
+			+ "Roll two dice. If the number rolled is equal to or less"
+			+ " than your current LUCK score, you have been lucky. "
+			+ "If the number rolled is higher than you current LUCK"
+			+ " score, you have been unlucky. The consequences of being"
+			+ " lucky or unlucky will be found on the page."
+			+ "Each time you Test your LUCK, you must subtract one point"
+			+ " from your current LUCK score. So the more you rely on luck,"
+			+ " the more risky this becomes.";
+
+	/*
+	 * rule to use LUCK
+	 */
+	public static final String RULE_4 = 
+			"Using LUCK in Battles \n"
+			+ "In battles, you always have the option of using your luck"
+			+ " either to score a more serious wound on a creature, or to"
+			+ " minimize the effects of a wound the creature has just"
+			+ " scored on you.\n "
+			+ "If you have just wounded the creature: "
+			+ "you may Test your Luck as described above. If you are lucky, "
+			+ "subtract an extra 2 points from the creature's STAMINA"
+			+ " score (4 instead of 2 normally)."
+			+ " But if you are unlucky, you must restore 1 point to the"
+			+ " creature's STAMINA (so instead of scoring the normal"
+			+ " 2 points of damage, you have now scored only 1)\n "
+			+ "If the creature has just wounded you: "
+			+ "you can Test your LUCK to try to minimize the wound.\n"
+			+ " If you are lucky, restore 1 point of your STAMINA.\n"
+			+ " If you are unlucky, subtract 1 extra STAMINA point."
+			+ "Don’t forget to subtract 1 point from you LUCK score"
+			+ " each time you Test your Luck.";
+
+	public static final String RULE_5 = 
+			"Restoring skill, stamina and luck \n"
+			+ "Skill\n "
+			+ "Occasionally, a page may give instruction to alter your"
+			+ " SKILL score. A Magic Weapon my increase your SKILL,"
+			+ " but remember that only one weapon can be used at a time！"
+			+ " You cannot claim 2 SKILL bonuses for carrying two Magic Swords."
+			+ " Your SKILL score can never exceed its Initial value unless"
+			+ " specifically instructed. Drinking the Potion of Skill will"
+			+ " restore your SKILL to its Initial level at any time.\n\n"
+			+ "Stamina and Provisions\n\n"
+			+ "Your STAMINA score will change a lot during the adventure."
+			+ " As you near your goal, your STAMINA level may be dangerously"
+			+ " low and battles may be particularly risky so be careful!"
+			+ "You start the game with enough Provisions for ten meals."
+			+ " A separate Provisions Remaining box is provided on the Adventure"
+			+ " Sheet for recording details of Provisions. You may rest and eat"
+			+ " only when allowed by the instructions on a page and you may"
+			+ " eat only one meal at a time. When you eat a meal, add 4 points"
+			+ " to your STAMINA score and deduct 1 point from your Provisions."
+			+ " Remember that you have a long way to go, so use your Provision wisely! "
+			+ "Don’t forget that your STAMINA score may never exceed its "
+			+ "initial value unless specifically instructed on a page."
+			+ " Drinking the Potion of Strength.\n"
+			+ "Luck\n\n"
+			+ "You will find additions to your LUCK score awarded when "
+			+ "you have been particularly lucky. Remember that, as with"
+			+ " SKILL and STAMINA, your LUCK score may never exceed its "
+			+ "initial value unless specifically.";
+
+	
     /**
      * Paragraph 1 of background.
      */
