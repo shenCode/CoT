@@ -63,4 +63,20 @@ public class Player {
     public int getGold() {
         return gold;
     }
+    
+    public int setSkill(int a){
+    	return skill = skill + a;
+    }
+    
+    public int setLuck(int a){
+    	return luck = luck + a;
+    }
+    
+    public int setStamina(int a){
+    	return stamina = stamina + a;
+    }
+    
+    public int setProvision(int a){
+    	return provisions = provisions + a;
+    }
 }
