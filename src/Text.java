@@ -1,4 +1,8 @@
-
+/**
+ * Text class that stores the text of the game.
+ * @author Lenovo
+ *
+ */
 public class Text {
 
     /**
@@ -97,7 +101,7 @@ public class Text {
     /**
      * Paragraph 5 of background.
      */
-    public static final String BACKGROUND_5 = 
+    public static final String BACKGROUND_5 =
             "When he turns to the innkeeper to snap "
             + "his fingers for food and drink, "
             + "you can see that he is obviously of some standing in the town, "
@@ -148,11 +152,11 @@ public class Text {
             + "They stalked throu9gh the town, "
             + "entering homes through open windows, "
             + "and killing the poor people inside.";
-    
+
     /**
      * Paragraph 6 of background.
      */
-    public static final String BACKGROUND_6 = 
+    public static final String BACKGROUND_6 =
             "In the morning we counted twenty-three dead. "
             + "So we barred our windows and bolted our doors, "
             + "yet each night the Moon Dogs return and we are unable to "
@@ -217,4 +221,53 @@ public class Text {
             + "As you leave the tavern, "
             + "a black cat scurries past your feet and "
             + "you almost trip; a bad omen perhaps?'";
+
+    public static final String STORY1 = "The walk to Port Blacksand "
+            + "takes you west some fifty miles across plains and "
+            + "over hills; fortunately without any harmful encounters. "
+            + "Eventually you reach the coast and see the high city wall "
+            + "surrounding Port Blacksand and the cluster of buildings "
+            + "projecting into the sea like an ugly black mark. "
+            + "Ships lie anchored in the harbour and smoke rises "
+            + "gently from chimneys. It looks peaceful enough and "
+            + "it is only when the wind changes that you smell the"
+            + "decay in the breeze to remind you of the evil nature of "
+            + "this notorious place. Following the dusty road north "
+            + "along the coast to the city gates, you begin to notice "
+            + "fearful warnings - skulls on wooden spikes, starving "
+            + "men in iron cages suspended from the city wall and black "
+            + "flags everywhere. As you approach the main gate a chill "
+            + "runs down your spine and you instinctively grip the hilt "
+            + "of your broadsword for reassurance. At the gate you are "
+            + "confront by a tall guard wearing a black chainmail coat "
+            + "and iron helmet. He steps foward, barring the way "
+            + "with his pike, saying, 'Who would enter Port Blacksand "
+            + "uninvited? State the nature of your business "
+            + "or go back the way you came.' Will you: ";
+
+    public static final String STORY1_1 = "Tell him you wish "
+            + "to be taken to Nicodemus?";
+
+    public static final String STORY1_2 = "Tell him you wish "
+            + "to sell some stolen booty?";
+
+    public static final String STORY1_3 = "Attack him quickly with your sword?";
+
+    public static final String STORY2 = "You remove the bracelet "
+            + "from your wrist and toss it at the oncoming monster. "
+            + "It lands on its armour-like shell and sticks to it like glue. "
+            + "You then watch as the bracelet starts to burn its way through "
+            + "the shell into the body of the Giant Centipede. "
+            + "Smoke rises from the neat round hole and as the bracelet "
+            + "burns deeper you can see from the frantic movements of the "
+            + "Centipede that it is in its death throes. "
+            + "Finally it is still and you manage to squeeze yourself "
+            + "between its body and the roof of the tunnel. "
+            + "You walk further down the tunnel, "
+            + "which ends at an iron grill through which the sewage runs.";
+
+    public static final String STORY2_1 = "If you wish to remove the grill.";
+
+    public static final String STORY2_2 = "If you wish to walk "
+            + "back to the entrace hole.";
 }

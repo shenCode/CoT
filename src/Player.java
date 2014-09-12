@@ -1,18 +1,23 @@
 /**
+ * Player object for the game.
  *
  * @author Lenovo
  *
  */
 public class Player {
 
-    private static final int STARTING_PROVISIONS = 10;
-    private static final int STARTING_GOLD = 30;
+    private final int startingProvisions = 10;
+    private final int startingGold = 30;
+    private final int baseSkill = 6;
+    private final int baseStamina = 12;
+    private final int baseLuck = 6;
 
     private int skill;
     private int stamina;
     private int luck;
     private int provisions;
     private int gold;
+
     public Player() {
         initSkill();
         initStamina();
@@ -23,25 +28,25 @@ public class Player {
 
     private void initSkill() {
         skill = Tools.rollDice(1);
-        skill += 6;
+        skill += baseSkill;
     }
 
     private void initStamina() {
         stamina = Tools.rollDice(2);
-        stamina += 12;
+        stamina += baseStamina;
     }
 
     private void initLuck() {
         luck = Tools.rollDice(1);
-        luck += 6;
+        luck += baseLuck;
     }
 
     private void initProvisions() {
-        provisions = STARTING_PROVISIONS;
+        provisions = startingProvisions;
     }
 
     private void initGold() {
-        gold = STARTING_GOLD;
+        gold = startingGold;
     }
 
     public int getSkill() {
@@ -62,5 +67,13 @@ public class Player {
 
     public int getGold() {
         return gold;
+    }
+
+    public void setGold(int change) {
+        gold += change;
+    }
+
+    public void setProvisions(int change) {
+        provisions += change;
     }
 }
