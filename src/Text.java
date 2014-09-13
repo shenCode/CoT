@@ -268,6 +268,5 @@ public class Text {
 
     public static final String STORY2_1 = "If you wish to remove the grill.";
 
-    public static final String STORY2_2 = "If you wish to walk "
-            + "back to the entrace hole.";
+    public static final String STORY2_2 = "If you wish to walk back to the entrace hole.";
 }
