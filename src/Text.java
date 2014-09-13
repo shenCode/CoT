@@ -241,6 +241,9 @@ public class Text {
             + "a black cat scurries past your feet and " + "\n"
             + "you almost trip; a bad omen perhaps?'" + "\n";
 
+    public static final String BACKGROUND_9 =
+            "Enter 1 to begin.";
+
     public static final String STORY1 = "The walk to Port Blacksand " + "\n"
             + "takes you west some fifty miles across plains and " + "\n"
             + "over hills; fortunately without any harmful encounters. " + "\n"
@@ -266,12 +269,13 @@ public class Text {
             + "or go back the way you came.' Will you: " + "\n";
 
     public static final String STORY1_1 = "Tell him you wish "
-            + "to be taken to Nicodemus?";
+            + "to be taken to Nicodemus? Enter 1.";
 
     public static final String STORY1_2 = "Tell him you wish "
-            + "to sell some stolen booty?";
+            + "to sell some stolen booty? Enter 2.";
 
-    public static final String STORY1_3 = "Attack him quickly with your sword?";
+    public static final String STORY1_3 = "Attack him quickly "
+            + "with your sword? Enter 3.";
 
     public static final String STORY2 = "You remove the bracelet "
             + "from your wrist and toss it at the oncoming monster. "
@@ -286,18 +290,32 @@ public class Text {
             + "You walk further down the tunnel, "
             + "which ends at an iron grill through which the sewage runs.";
 
-    public static final String STORY2_1 = "If you wish to remove the grill.";
+    public static final String STORY2_1 = "If you wish to remove the grill. "
+            + "Enter 1.";
 
     public static final String STORY2_2 = "If you wish to walk "
-            + "back to the entrace hole.";
+            + "back to the entrace hole. Enter 2";
 
     public static final String STORY3 = "The man stops playing and tells "
             + "you that he can bring you good fortune. "
             + "For the sum of 3 Gold Pieces he will "
             + "sing you a song that will bring you luck.";
 
-    public static final String STORY3_1 = "If you wish to pay the musician.";
+    public static final String STORY3_1 = "If you wish to pay the musician. "
+            + "Enter 1.";
 
     public static final String STORY3_2 = "If you do not believe him, "
-            + "you may walk to the next stall.";
+            + "you may walk to the next stall. Enter 2.";
+
+    public static final String STORY4 = "You hear a bell ring on" + "\n"
+            + " the other side of the door and a few minutes" + "\n"
+            + " later the door is opened by a thin, pale-skinned" + "\n"
+            + " man with dark, hollow eyes, who is wearing a servant's" + "\n"
+            + " uniform. In a cold, hissing voice he says, 'Yes'?" + "\n";
+
+    public static final String STORY4_1 = "If you wish to tell him you "
+            + "are a lost traveller. Enter 1.";
+
+    public static final String STORY4_2 = "If you wish to attack him "
+            + "with your sword. Enter 2.";
 }

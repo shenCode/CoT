@@ -9,14 +9,15 @@ public class Main {
         Player p = new Player();
         int state = 0;
         Scanner scan = new Scanner(System.in);
+        p.setArea(m.getAreaLocation(state));
         while (state != 400) {
-            p.setArea(m.getAreaLocation(state));
             System.out.print("Make your decision: ");
             System.out.println();
             state = scan.nextInt();
             System.out.println("==================="
                     + "=================================================");
             System.out.println();
+            p.setArea(p.getCurrentArea().getNextById(state));
         }
     }
 }

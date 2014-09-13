@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Area {
 
@@ -20,6 +22,7 @@ public class Area {
             areaText = Text.BACKGROUND_1 + Text.BACKGROUND_2 + Text.BACKGROUND_3
                 + Text.BACKGROUND_4 + Text.BACKGROUND_5 + Text.BACKGROUND_6
                 + Text.BACKGROUND_7 + Text.BACKGROUND_8;
+            prompts.add(Text.BACKGROUND_9);
             break;
         case 1:
             areaText = Text.STORY1;
@@ -37,10 +40,26 @@ public class Area {
             prompts.add(Text.STORY3_1);
             prompts.add(Text.STORY3_2);
             break;
-        default:
+        case 4:
+            areaText = Text.STORY4;
+            prompts.add(Text.STORY4_1);
+            prompts.add(Text.STORY4_2);
             break;
+        default:
+//            Collections.sort(nextArea, new AreaIdComparator());
         }
     }
+
+//    private class AreaIdComparator implements Comparator<Area> {
+//
+//        public int compare(Area a1, Area a2) {
+//            if (a1.getId() < a2.getId()) {
+//                return 1;
+//            } else {
+//                return -1;
+//            }
+//        }
+//    }
 
     public int getId() {
         return id;
@@ -56,5 +75,17 @@ public class Area {
 
     public ArrayList<Area> getNext() {
         return nextArea;
+    }
+
+    public Area getNextById(int id) {
+        showText();
+        return nextArea.get(id - 1);
+    }
+
+    public void showText() {
+        System.out.println(areaText);
+        for (int i = 0; i < prompts.size(); i++) {
+            System.out.println(prompts.get(i));
+        }
     }
 }
