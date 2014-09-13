@@ -17,6 +17,7 @@ public class Player {
     private int luck;
     private int provisions;
     private int gold;
+    private Area currentArea;
 
     public Player() {
         initSkill();
@@ -75,5 +76,13 @@ public class Player {
 
     public void setProvisions(int change) {
         provisions += change;
+    }
+
+    public void setArea(Area area) {
+        currentArea = area;
+    }
+
+    public Area getCurrentArea() {
+        return currentArea;
     }
 }

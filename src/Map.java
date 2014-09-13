@@ -16,5 +16,12 @@ public class Map {
         map[1].addNext(map[49]);
         map[2].addNext(map[377]);
         map[2].addNext(map[174]);
+        map[3].addNext(map[37]);
+        map[3].addNext(map[398]);
+    }
+
+    public Area getAreaLocation(int id) {
+        System.out.println(map[id].getText());
+        return map[id];
     }
 }
