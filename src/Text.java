@@ -270,13 +270,13 @@ public class Text {
             + "or go back the way you came.' Will you: " + "\n";
 
     public static final String STORY1_1 = "Tell him you wish "
-            + "to be taken to Nicodemus? Enter 1.";
+            + "to be taken to Nicodemus?";
 
     public static final String STORY1_2 = "Tell him you wish "
-            + "to sell some stolen booty? Enter 2.";
+            + "to sell some stolen booty?";
 
     public static final String STORY1_3 = "Attack him quickly "
-            + "with your sword? Enter 3.";
+            + "with your sword?";
 
     public static final String STORY2 = "You remove the bracelet "
             + "from your wrist and toss it at the oncoming monster. "
@@ -291,22 +291,22 @@ public class Text {
             + "You walk further down the tunnel, "
             + "which ends at an iron grill through which the sewage runs.";
 
-    public static final String STORY2_1 = "If you wish to remove the grill. "
-            + "Enter 1.";
+    public static final String STORY2_1 = "If you wish to "
+            + "remove the grill." + "\n";
 
     public static final String STORY2_2 = "If you wish to walk "
-            + "back to the entrace hole. Enter 2";
+            + "back to the entrace hole.";
 
     public static final String STORY3 = "The man stops playing and tells "
             + "you that he can bring you good fortune. "
             + "For the sum of 3 Gold Pieces he will "
             + "sing you a song that will bring you luck.";
 
-    public static final String STORY3_1 = "If you wish to pay the musician. "
-            + "Enter 1.";
+    public static final String STORY3_1 = "If you wish to pay "
+            + "the musician." + "\n";
 
     public static final String STORY3_2 = "If you do not believe him, "
-            + "you may walk to the next stall. Enter 2.";
+            + "you may walk to the next stall.";
 
     public static final String STORY4 = "You hear a bell ring on" + "\n"
             + " the other side of the door and a few minutes" + "\n"
@@ -315,10 +315,10 @@ public class Text {
             + " uniform. In a cold, hissing voice he says, 'Yes'?" + "\n";
 
     public static final String STORY4_1 = "If you wish to tell him you "
-            + "are a lost traveller. Enter 1.";
+            + "are a lost traveller.";
 
     public static final String STORY4_2 = "If you wish to attack him "
-            + "with your sword. Enter 2.";
+            + "with your sword.";
 
     public static final String STORY5 = "Drawing your sword you " + "\n"
             + "leap over the counter to attack the MAN-ORC, " + "\n"
@@ -332,11 +332,69 @@ public class Text {
             + "nor any other kind of jumble for that matter." + "\n";
 
     public static final String STORY6_1 = "If you wish to obey her, " + "\n"
-            + "leave the house and head further" + "\n"
-            + " north along Stable Street." + "\n"
-            + "Enter 1."  + "\n";
+            + "leave the house and head further " + "\n"
+            + "north along Stable Street." + "\n";
 
     public static final String STORY6_2 = "If you wish to go through the" + "\n"
             + " curtains and see who is" + "\n"
-            + " being so rude to you, Enter 2." + "\n";
+            + " being so rude to you," + "\n";
+
+    public static final String STORY7 = "You tiptoe quietly out of " + "\n"
+            + "the room and close the door. " + "\n"
+            + "In the corridor you open the pouch and "
+            + "find six black pearls." + "\n";
+
+    public static final String STORY7_1 = "To open "
+            + "the other door."  + "\n";
+
+    public static final String STORY7_2 = "Leave the ship to continue " + "\n"
+            + "your search of Pork Blacksand " + "\n"
+            + "by walking north up Harbour Street.";
+
+    public static final String STORY151 = "The two guards lead you " + "\n"
+            + "into the guardhouse and take you immediately " + "\n"
+            + "downstairs to the cells below. There are four " + "\n"
+            + "cells and all are empty except for one which houses " + "\n"
+            + "a frail, white-haired old man. The guards unlock the " + "\n"
+            + "cell nexto the old man's and throw you in, placing " + "\n"
+            + "your sword on a table outside. The only contents of " + "\n"
+            + "the cell are a straw mattress and a pail of water. " + "\n"
+            + "The guards go back upstairs and as they disappear " + "\n"
+            + "the old man gets up off his bed and starts to speak. " + "\n"
+            + "'You're and outsider, aren't you? Don't reply, " + "\n"
+            + "it's obvious. Do you want me to set you free? " + "\n"
+            + "Give me 10 Gold Pieces and I'll have you out in " + "\n"
+            + "five minutes.' The old man then puts his arm " + "\n"
+            + "through the bars of your cell with the palm " + "\n"
+            + "of his hand upturned." + "\n";
+
+    public static final String STORY151_1 = "If you wish to give "
+            + "the old man 10 Gold Pieces.";
+
+    public static final String STORY151_2 = "If you would rather "
+            + "ignore the old man.";
+    
+    public static final String STORY202 = "The guard replies " + "\n"
+            + "that he will send for an escort " + "\n"
+            + "to take you to Nicodemus. " + "\n"
+            + "He reaches up to a small bell " + "\n"
+            + "on the wall of the guardhouse " + "\n"
+            + "and rings it three times. Almost immediately two " + "\n"
+            + "other guards come running out of the house, and you " + "\n"
+            + "are surprised when they each " + "\n"
+            + "grab hold of one of your arms. " + "\n"
+            + "The guard with the pike looks up to the sky and laughs, " + "\n"
+            + "saying, 'So you want to see Nicodemus, do you? " + "\n"
+            + "How would you like to see the " + "\n"
+            + "inside of a dungeon cell instead? " + "\n"
+            + "Guards, take this fool away to be shackled, " + "\n"
+            + "and throw away the key.' Will you: ";
+
+    public static final String STORY202_1 = "Allow yourself "
+            + "to be taken away?";
+
+    public static final String STORY202_2 = "Attempt to "
+            + "fight the guards?";
+
+    public static final String STORY202_3 = "Try to bribe the guards?";
 }
