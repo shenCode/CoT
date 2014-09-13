@@ -5,6 +5,7 @@
  */
 public class Text {
 
+    public static final String BATTLE = "The battle begins.";
     /**
      * Paragraph 1 of background.
      */
@@ -318,4 +319,24 @@ public class Text {
 
     public static final String STORY4_2 = "If you wish to attack him "
             + "with your sword. Enter 2.";
+
+    public static final String STORY5 = "Drawing your sword you " + "\n"
+            + "leap over the counter to attack the MAN-ORC, " + "\n"
+            + "who swiftly grabs his hand-axe. " + "\n"
+            + "You soon realize that the Man-Orc " + "\n"
+            + "has used his weapon before." + "\n";
+
+    public static final String STORY6 = "Her tone becomes unpleasant " + "\n"
+            + "and she tells you to get out of her house because " + "\n"
+            + "there are certainly no rags in it, " + "\n"
+            + "nor any other kind of jumble for that matter." + "\n";
+
+    public static final String STORY6_1 = "If you wish to obey her, " + "\n"
+            + "leave the house and head further" + "\n"
+            + " north along Stable Street." + "\n"
+            + "Enter 1."  + "\n";
+
+    public static final String STORY6_2 = "If you wish to go through the" + "\n"
+            + " curtains and see who is" + "\n"
+            + " being so rude to you, Enter 2." + "\n";
 }

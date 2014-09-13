@@ -2,7 +2,7 @@ public class Map {
 
     private Area[] map;
     public Map() {
-        map = new Area[401];
+        map = new Area[402];
         initialize();
     }
 
@@ -20,6 +20,11 @@ public class Map {
         map[3].addNext(map[398]);
         map[4].addNext(map[339]);
         map[4].addNext(map[35]);
+        map[5].addNext(map[371]);
+        map[6].addNext(map[333]);
+        map[6].addNext(map[88]);
+        
+        map[401].addNext(map[1]);
     }
 
     public Area getAreaLocation(int id) {

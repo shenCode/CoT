@@ -1,13 +1,11 @@
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 public class Area {
 
     private int id;
     private String areaText;
     private ArrayList<Area> nextArea = new ArrayList<Area>();
-    private Enemy enemy;
+    private Enemy enemy = new Enemy("", 0, 0);
     private ArrayList<String> prompts = new ArrayList<String>();
 
     public Area(int num) {
@@ -45,21 +43,25 @@ public class Area {
             prompts.add(Text.STORY4_1);
             prompts.add(Text.STORY4_2);
             break;
+        case 5:
+            areaText = Text.STORY5;
+            prompts.add(Text.BATTLE);
+            enemy = new Enemy("MAN-ORC", 8, 5);
+        case 6:
+            areaText = Text.STORY6;
+            prompts.add(Text.STORY6_1);
+            prompts.add(Text.STORY6_2);
+        case 7:
+            
+            
+            
+        case 401:
+            areaText = "You died.";
+            prompts.add("Enter 1 to restart the game."); 
         default:
-//            Collections.sort(nextArea, new AreaIdComparator());
+            break;
         }
     }
-
-//    private class AreaIdComparator implements Comparator<Area> {
-//
-//        public int compare(Area a1, Area a2) {
-//            if (a1.getId() < a2.getId()) {
-//                return 1;
-//            } else {
-//                return -1;
-//            }
-//        }
-//    }
 
     public int getId() {
         return id;
@@ -78,7 +80,6 @@ public class Area {
     }
 
     public Area getNextById(int id) {
-        showText();
         return nextArea.get(id - 1);
     }
 
@@ -87,5 +88,9 @@ public class Area {
         for (int i = 0; i < prompts.size(); i++) {
             System.out.println(prompts.get(i));
         }
+    }
+
+    public Enemy getEnemy() {
+        return enemy;
     }
 }

@@ -79,10 +79,25 @@ public class Player {
     }
 
     public void setArea(Area area) {
+        area.showText();
         currentArea = area;
+        if (area.getId() == 5) {
+            battle(area.getEnemy());
+        }
+        if (area.getId() == 7) {
+            setLuck(2);
+        }
     }
 
     public Area getCurrentArea() {
         return currentArea;
+    }
+
+    public void setLuck(int change) {
+        luck += change;
+    }
+
+    public void battle(Enemy e) {
+        // If lost, set area to 401.
     }
 }
