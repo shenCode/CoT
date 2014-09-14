@@ -24,6 +24,7 @@ public class Player {
     private Area currentArea;
     private boolean[] goneTo = new boolean[402];
     private ArrayList<String> inventory = new ArrayList<String>();
+    private int count;
 
     public Player() {
         initSkill();
@@ -125,6 +126,16 @@ public class Player {
             }
         case 8:
             setLuck(2);
+        case 10:
+            for (int i = 0; i < area.getEnemy().size(); i++) {
+                battle(area.getEnemy().get(i));
+            }
+            if (count > 6) {
+                area.removeNext(212);
+            } else if (count <= 6) {
+                area.removeNext(130);
+            }
+            break;
         case 54:
             setGold(2);
             inventory.add("merchantPass");
@@ -166,7 +177,7 @@ public class Player {
 
         int playerPoints = 0;
         int creaturePoints = 0;
-
+        count = 0;
         // battling when both stamina not 0
         while (getStamina() > 0 && e.getStamina() > 0) {
 
@@ -214,9 +225,10 @@ public class Player {
                 System.out.println("playerStamina: " + getStamina());
                 System.out.println("enemyStamina: " + e.getStamina());
             }
-
+            count++;
         }
 
+        System.out.println("Your battle lasted for " + count + "rounds.");
         if (getStamina() <= 0) {
             System.out.println("current stamina is: " + getStamina());
             System.out.println("GG...");

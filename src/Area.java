@@ -65,6 +65,10 @@ public class Area {
         case 9:
             areaText = Text.STORY9;
             prompts.add(new Prompt(9, "You have died."));
+        case 10:
+            areaText = Text.STORY10;
+            prompts.add(new Prompt(10, ""));
+            enemy.add(new Enemy("CITY GUARD", 8, 7));
         case 54:
             areaText = Text.STORY54;
             prompts.add(new Prompt(54, "Enter 1 to continue."));

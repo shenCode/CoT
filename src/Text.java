@@ -371,6 +371,9 @@ public class Text {
             + "your undead existence " + "\n"
             + "as a servant of Zanbar Bone." + "\n";
 
+    public static final String STORY10 = "The GUARD is really " + "\n"
+            + "annoyed and charges at you with his pike." + "\n";
+
     public static final String STORY54 = "You search the " + "\n"
             + "guardhouse and find 2 Gold Pieces and a merchant's " + "\n"
             + "pass permitting the holder to trade in Port Blacksand. " + "\n"
