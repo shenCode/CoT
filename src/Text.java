@@ -374,6 +374,18 @@ public class Text {
     public static final String STORY10 = "The GUARD is really " + "\n"
             + "annoyed and charges at you with his pike." + "\n";
 
+    public static final String STORY11 = "The Trolls see what " + "\n"
+            + "you are doing and run towards the tree. " + "\n"
+            + "You are forced to leave your shield behind. " + "\n"
+            + "After climbing quickly up the tree you realize " + "\n"
+            + "that you must jump a distance of two metres " + "\n"
+            + "between the branch and the top of the wall. " + "\n"
+            + "Below, you see the two Trolls running around " + "\n"
+            + "the tree waving their swords at you." + "\n";
+
+    public static final String STORY11_1 = "There is " + "\n"
+            + "no alternative but to jump." + "\n";
+
     public static final String STORY54 = "You search the " + "\n"
             + "guardhouse and find 2 Gold Pieces and a merchant's " + "\n"
             + "pass permitting the holder to trade in Port Blacksand. " + "\n"

@@ -80,6 +80,9 @@ public class Player {
         return gold;
     }
 
+    public void setSkill(int change) {
+        skill += change;
+    }
     public void setLuck(int change) {
         luck += change;
     }
@@ -136,6 +139,11 @@ public class Player {
                 area.removeNext(130);
             }
             break;
+        case 11:
+            setSkill(-1);
+            if (inventory.contains("chainmailCoat")) {
+                setSkill(-2);
+            }
         case 54:
             setGold(2);
             inventory.add("merchantPass");
