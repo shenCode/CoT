@@ -169,7 +169,8 @@ public class Player {
                         System.out.println("Extra 2 point damage to creature.");
                         e.setStamina(-4);
                     } else {
-                        e.setStamina(-2);
+                        System.out.println("Unlucky, only deals 1 damage.");
+                        e.setStamina(-1);
                     }
                 } else if (input.equals("N")) {
                     e.setStamina(-2);
@@ -186,7 +187,8 @@ public class Player {
                         System.out.println("restore 1 point back to player.");
                         setStamina(-1);
                     } else {
-                        setStamina(-2);
+                        System.out.println("Unlucky. 1 extra damage on player.");
+                        setStamina(-3);
                     }
                 } else if (input.equals("N")) {
                     setStamina(-2);
@@ -205,6 +207,7 @@ public class Player {
             // set the player next area
             System.out.println("Creature dead! Well play!!");
             e.setDead();
+            setArea(currentArea.getNext().get(0));
         }
     }
 }
