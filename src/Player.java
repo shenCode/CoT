@@ -14,7 +14,7 @@ public class Player {
     private final int baseStamina = 12;
     private final int baseLuck = 6;
 
-    private Tools playerTools;
+    private Scanner scan;
     private int skill;
     private int stamina;
     private int luck;
@@ -94,9 +94,17 @@ public class Player {
         provisions += change;
     }
 
-    public int textLuck() {
+    public boolean textLuck() {
+        int luckPoint = this.playerRoll(2);
+        this.setLuck(-1);
 
-        return -1;
+        if (luckPoint <= this.getLuck()) {
+            System.out.println("This is your lucky day...:)");
+            return true;
+        } else {
+            System.out.println("This is NOT your lucky day...");
+            return false;
+        }
     }
 
     public void setArea(Area area) {
@@ -119,7 +127,7 @@ public class Player {
     }
 
     public int playerRoll(int diceNum) {
-        int rollPoint = playerTools.rollDice(diceNum);
+        int rollPoint = this.playerRoll(diceNum);
         return rollPoint;
     }
 
@@ -131,7 +139,6 @@ public class Player {
             enemy = getCurrentArea().getEnemy();
         }
 
-        int currLuck = this.getLuck();
         // int playerStamina = this.getStamina();
         // int enemyStamina = enemy.getStamina();
 
@@ -142,7 +149,7 @@ public class Player {
         int creaturePoints = 0;
 
         // battling when both stamina not 0
-        while (this.getStamina() >= 0 && enemy.getStamina() >= 0) {
+        while (this.getStamina() > 0 && enemy.getStamina() > 0) {
 
             System.out.println("Let's roll the dice...");
 
@@ -154,14 +161,35 @@ public class Player {
 
             if (playerPoints > creaturePoints) {
                 System.out.println("Congras...player has higher point to beat "
-                        + "the creature. would you like to use luck【Y/N】?");
-                // state = scan.nextLine();
-                enemy.setStamina(-2);
+                        + "the creature. Would you like to use luck [Y/N]?");
+                String input = scan.nextLine();
+                if (input.equals("Y")) {
+                    if (this.textLuck()) {
+                        System.out.println("Extra 2 point damage to creature.");
+                        enemy.setStamina(-4);
+                    } else {
+                        enemy.setStamina(-2);
+                    }
+                } else if (input.equals("N")) {
+                    enemy.setStamina(-2);
+                }
                 System.out.println("playerStamina: " + this.getStamina());
                 System.out.println("enemyStamina: " + enemy.getStamina());
 
             } else if (playerPoints < creaturePoints) {
-                this.setStamina(-2);
+                System.out.println("oops...creature has higher point to beat "
+                        + "player. Would you like to use luck [Y/N]?");
+                String input = scan.nextLine();
+                if (input.equals("Y")) {
+                    if (this.textLuck()) {
+                        System.out.println("restore 1 point back to player.");
+                        this.setStamina(-1);
+                    } else {
+                        this.setStamina(-2);
+                    }
+                } else if (input.equals("N")) {
+                    this.setStamina(-2);
+                }
                 System.out.println("playerStamina: " + this.getStamina());
                 System.out.println("enemyStamina: " + enemy.getStamina());
             }
