@@ -22,7 +22,7 @@ public class Player {
     private int gold;
     private Area currentArea;
     private boolean[] goneTo = new boolean[402];
-
+    
     public Player() {
         initSkill();
         initStamina();
@@ -84,7 +84,6 @@ public class Player {
     public void setStamina(int change){
 
     	this.stamina += change;
-    	System.out.println("set stamina。。。。。。。。。。。。。。。:" +this.stamina);
     }
 
     public void setGold(int change) {
@@ -127,16 +126,23 @@ public class Player {
         	enemy = getCurrentArea().getEnemy();    		
     	}
     	
-    	Scanner scan = new Scanner(System.in);
-    	String state;
+    	
     	int currLuck = this.getLuck();
-    	int playerStamina = this.getStamina();
-    	int enemyStamina = enemy.getStamina();
+    	int playerStamina = 0;
+    	int enemyStamina = 0;
+    	
+    	System.out.println("player: " + playerStamina + "\n"
+    			+ "creature: " + enemyStamina);
+    	
     	int playerPoints = 0;
     	int creaturePoints = 0;
   	
     	//battling when both stamina not 0
-    	while(playerStamina != 0 || enemyStamina != 0){
+    	while(playerStamina >= 0 && enemyStamina >= 0){
+    		
+        	playerStamina = this.getStamina();
+        	enemyStamina = enemy.getStamina();
+    		
     		System.out.println("Let's roll the dice...");
     		
     		playerPoints = this.playerRoll(2) + this.getSkill();
@@ -145,17 +151,17 @@ public class Player {
     		System.out.println("Player's point is: " + playerPoints + "\n"
     				+ "Creature's point is: " + creaturePoints);
     		
-    		if(this.getStamina() > enemy.getStamina()){
+    		if(playerPoints > creaturePoints){
     			System.out.println("Congras...player has higher point to beat the creature. would you like to use luck【Y/N】?");
     			//state = scan.nextLine();
     			enemy.setStamina(-2);
-    			System.out.println("playerStamina： " + this.getStamina());
+    			System.out.println("playerStamina： " + playerStamina);
     			System.out.println("enemyStamina: " + enemyStamina);
 
     		}
-    		else if(this.getStamina() < enemy.getStamina()){
+    		else if(playerPoints < creaturePoints){
     			System.out.println("Oops...creature has higher point, player has wounded.");
-    			setStamina(new Integer(-2));
+    			this.setStamina(-2);;
     			System.out.println("playerStamina： " + playerStamina);
     			System.out.println("enemyStamina: " + enemyStamina);
     		}
