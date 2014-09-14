@@ -26,11 +26,25 @@ public class Map {
         map[6].addNext(map[88]);
         map[7].addNext(map[232]);
         map[7].addNext(map[78]);
+        map[8].addNext(map[334]);
+        map[9].addNext(map[401]);
+        map[54].addNext(map[74]);
+        map[74].addNext(map[95]);
+        map[74].addNext(map[116]);
+        map[74].addNext(map[17]);
+        map[94].addNext(map[234]);
+        map[95].addNext(map[224]);
+        map[95].addNext(map[300]);
+        map[96].addNext(map[257]);
+        map[96].addNext(map[319]);
+        map[96].addNext(map[197]);
         map[151].addNext(map[351]);
         map[151].addNext(map[29]);
         map[202].addNext(map[151]);
         map[202].addNext(map[69]);
         map[202].addNext(map[276]);
+        map[224].addNext(map[66]);
+        map[224].addNext(map[236]);
         map[351].addNext(map[54]);
         map[401].addNext(map[1]);
     }

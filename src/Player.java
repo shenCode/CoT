@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -22,6 +23,7 @@ public class Player {
     private int gold;
     private Area currentArea;
     private boolean[] goneTo = new boolean[402];
+    private ArrayList<String> inventory = new ArrayList<String>();
 
     public Player() {
         initSkill();
@@ -109,22 +111,38 @@ public class Player {
     public void setArea(Area area) {
         currentArea = area;
         goneTo[area.getId()] = true;
-        if (area.getId() == 5 || area.getId() == 351) {
+        area.showText();
+        switch (area.getId()) {
+        case 5:
             for (int i = 0; i < area.getEnemy().size(); i++) {
                 battle(area.getEnemy().get(i));
             }
-        }
-        if (area.getId() == 7) {
+            break;
+        case 7:
             setLuck(2);
             if (goneTo[232]) {
                 area.removeNext(232);
             }
-        }
-        
-        if (area.getId() == 351) {
+        case 8:
+            setLuck(2);
+        case 54:
+            setGold(2);
+            inventory.add("merchantPass");
+        case 94:
+            setStamina(6);
+        case 96:
+            if (goneTo[319]) {
+                area.removeNext(319);
+            }
+        case 351:
             setGold(-10);
+            for (int i = 0; i < area.getEnemy().size(); i++) {
+                battle(area.getEnemy().get(i));
+            }
+            break;
+        default:
+            break;
         }
-        area.showText();
     }
 
     public Area getCurrentArea() {
@@ -187,7 +205,7 @@ public class Player {
                         System.out.println("restore 1 point back to player.");
                         setStamina(-1);
                     } else {
-                        System.out.println("Unlucky. 1 extra damage on player.");
+                        System.out.println("Unlucky. Extra damage on player.");
                         setStamina(-3);
                     }
                 } else if (input.equals("N")) {
@@ -202,12 +220,14 @@ public class Player {
         if (getStamina() <= 0) {
             System.out.println("current stamina is: " + getStamina());
             System.out.println("GG...");
-            // setArea(new Area(401));
+            Main.endGame();
         } else if (e.getStamina() <= 0) {
             // set the player next area
-            System.out.println("Creature dead! Well play!!");
+            System.out.println("Creature dead! Well played!!" + "\n");
             e.setDead();
-            setArea(currentArea.getNext().get(0));
+            System.out.println("==================="
+                    + "===============================================" + "\n");
+            System.out.println("Enter 1 to continue.");
         }
     }
 }
