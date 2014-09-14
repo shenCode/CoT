@@ -351,6 +351,82 @@ public class Text {
             + "your search of Pork Blacksand " + "\n"
             + "by walking north up Harbour Street.";
 
+    public static final String STORY8 = "The creature pins " + "\n"
+            + "the golden brooch to your leather tunic and you " + "\n"
+            + "pay the price demanded. You have bought a lucky " + "\n"
+            + "charm - 2 luck added to your total." + "\n";
+
+    public static final String STORY8_1 = "Pleased with your purchase you "
+            + "leave the house and head north.";
+
+    public static final String STORY9 = "You step back from the " + "\n"
+            + "vile body of Zanbar Bone, waiting for him to decay. " + "\n"
+            + "However, you have chosen wrongly! He pulls the arrow " + "\n"
+            + "from his chest and rubs the compound from his eyes. " + "\n"
+            + "He sees you and laughs. You are mesmerized by his power " + "\n"
+            + "and are uanble to move. He walks up to you and touches " + "\n"
+            + "your face with his skeletal fingers. " + "\n"
+            + "You life is draining " + "\n"
+            + "quickly away and you will soon begin " + "\n"
+            + "your undead existence " + "\n"
+            + "as a servant of Zanbar Bone." + "\n";
+
+    public static final String STORY54 = "You search the " + "\n"
+            + "guardhouse and find 2 Gold Pieces and a merchant's " + "\n"
+            + "pass permitting the holder to trade in Port Blacksand. " + "\n"
+            + "Taking your findings with you, you creep outside. " + "\n"
+            + "The guard at the main gate does not see you " + "\n"
+            + "and you walk into the city." + "\n";
+
+    public static final String STORY74 = "Through the main gates " + "\n"
+            + "you see that the rubbish-filled streets of the " + "\n"
+            + "port are narrow and cobbled. Old and decrepit " + "\n"
+            + "buildings line them closely, with their " + "\n"
+            + "upper storeys overhanging menacingly. You may: " + "\n";
+
+    public static final String STORY74_1 = "Go west down Key Street.";
+
+    public static final String STORY74_2 = "Head north along Market Street";
+
+    public static final String STORY74_3 = "Go east down Clock Street";
+
+    public static final String STORY94 = "The little man smiles and " + "\n"
+            + "says, 'Easy.' He reaches into his pocket " + "\n"
+            + "and produces some sparkling dust which he " + "\n"
+            + "throws up at you. As it settles on your " + "\n"
+            + "clothes, a feeling of strength surges through " + "\n"
+            + "your body. Add 6 STAMINA points. He then tells " + "\n"
+            + "you that as he is feeling particularly grateful " + "\n"
+            + "he will grant you another wish. With your strength " + "\n"
+            + "returned you feel you can now deal with Zanbar Bone " + "\n"
+            + "and ask the little man of his whereabouts." + "\n";
+
+    public static final String STORY95 = "On the left side of " + "\n"
+            + "the street you see a large iron key hanging over " + "\n"
+            + "the doorway of a small shop. " + "\n"
+            + "A sign in the window reads 'J. B. Wraggins, Locksmith'." + "\n";
+
+    public static final String STORY95_1 = "If you want to enter the shop.";
+
+    public static final String STORY95_2 = "If you would rather "
+            + "continue walking west.";
+
+    public static final String STORY96 = "You open the door and " + "\n"
+            + "enter a room which is adorned with macabre " + "\n"
+            + "objects and paintings. A black cat is sitting " + "\n"
+            + "in front of a table covered in black cloth. " + "\n"
+            + "Two black candles are burning on either side " + "\n"
+            + "of a mirror on the far wall. On the table lies " + "\n"
+            + "an open chest containing a golden skull." + "\n";
+
+    public static final String STORY96_1 = "Walk over to the chest?";
+
+    public static final String STORY96_2 = "Close the door "
+            + "and open the white door.";
+
+    public static final String STORY96_3 = "Close the door "
+            + "and walk back to the staircase to climb up to the next floor?";
+
     public static final String STORY151 = "The two guards lead you " + "\n"
             + "into the guardhouse and take you immediately " + "\n"
             + "downstairs to the cells below. There are four " + "\n"
@@ -388,7 +464,7 @@ public class Text {
             + "How would you like to see the " + "\n"
             + "inside of a dungeon cell instead? " + "\n"
             + "Guards, take this fool away to be shackled, " + "\n"
-            + "and throw away the key.' Will you: ";
+            + "and throw away the key.' Will you: " + "\n";
 
     public static final String STORY202_1 = "Allow yourself "
             + "to be taken away?";
@@ -397,18 +473,40 @@ public class Text {
             + "fight the guards?";
 
     public static final String STORY202_3 = "Try to bribe the guards?";
-    
+
+    public static final String STORY224 = "Sitting on a stool at " + "\n"
+            + "the back of the shop is an old bespectacled Dwarf. " + "\n"
+            + "He is busy cutting a key on a cast-iron treadle " + "\n"
+            + "machine which squeaks and grinds noisily. " + "\n"
+            + "You cough to get his attention, but he does " + "\n"
+            + "not look up from his work. Finally the " + "\n"
+            + "machine comes to a halt and the Dwarf " + "\n"
+            + "asks you what you want." + "\n";
+
+    public static final String STORY224_1 = "Ask him if he "
+            + "has any skeleton keys for sale.";
+
+    public static final String STORY224_2 = "Ask him if he "
+            + "knows where Nicodemus lives.";
+
     public static final String STORY351 = "You take 10 Gold Pieces " + "\n"
             + "out of your backpack and place them on the palm of " + "\n"
-            + "the hand outstretched before you. The old man then reaches " + "\n"
+            + "the hand outstretched before you. " + "\n"
+            + "The old man then reaches " + "\n"
             + "into his inner clothing and pulls out an iron key, " + "\n"
-            + "telling you that it will unlock your cell. Almost in disbelief " + "\n"
+            + "telling you that it will unlock your cell. " + "\n"
+            + "Almost in disbelief " + "\n"
             + "you take the key and place it in the lock. Incredibly, " + "\n"
             + "the lock turns. You look back at the old man and ask him " + "\n"
-            + "if he wishes to escape with you. He smiles and shakes his head, " + "\n"
-            + "saying that he is happy where he is. You leave the cell and, " + "\n"
-            + "picking up your sword, climb the stairs to the floor above. " + "\n"
-            + "The two guards are relaxing over a game of cards. You wave your " + "\n"
-            + "sword in the air and charge at them. They grab their swords " + "\n"
-            + "to defend themselves and fight you one at a time.";
+            + "if he wishes to escape with you. " + "\n"
+            + "He smiles and shakes his head, " + "\n"
+            + "saying that he is happy where he is. " + "\n"
+            + "You leave the cell and, " + "\n"
+            + "picking up your sword, climb " + "\n"
+            + "the stairs to the floor above. " + "\n"
+            + "The two guards are relaxing over " + "\n"
+            + "a game of cards. You wave your " + "\n"
+            + "sword in the air and charge at them. " + "\n"
+            + "They grab their swords " + "\n"
+            + "to defend themselves and fight you one at a time." + "\n";
 }

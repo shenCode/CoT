@@ -11,17 +11,23 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         p.setArea(m.getAreaLocation(state));
         while (state != 400) {
-            
             System.out.println("Current location: "
                     + p.getCurrentArea().getId());
-            
+
+            System.out.println("Current location: "
+                    + p.getCurrentArea().getId());  // Test statement
             System.out.print("Make your decision: ");
             System.out.println();
             state = scan.nextInt();
             System.out.println("==================="
-                    + "=================================================");
-            System.out.println();
+                    + "===============================================" + "\n");
             p.setArea(p.getCurrentArea().getNextById(state));
         }
+    }
+
+    // Not tested yet.
+    public static void endGame() {
+        System.out.println("You have died.");
+        new Player().setArea(new Map().getAreaLocation(0));
     }
 }

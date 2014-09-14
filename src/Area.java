@@ -2,14 +2,14 @@ import java.util.ArrayList;
 
 public class Area {
 
-    private int id;
+    private int id, count = 1;
     private String areaText;
     private ArrayList<Area> nextArea = new ArrayList<Area>();
     private ArrayList<Enemy> enemy = new ArrayList<Enemy>();
     private ArrayList<Prompt> prompts = new ArrayList<Prompt>();
 
     public Area(int num) {
-        id = 5;
+        id = num;
         initText();
     }
 
@@ -24,60 +24,105 @@ public class Area {
             break;
         case 1:
             areaText = Text.STORY1;
-            prompts.add(new Prompt(1, Text.STORY1_1 + " Enter 1."));
-            prompts.add(new Prompt(1, Text.STORY1_2 + " Enter 2."));
-            prompts.add(new Prompt(1, Text.STORY1_3 + " Enter 3."));
+            addPrompt(1, Text.STORY1_1);
+            addPrompt(1, Text.STORY1_2);
+            addPrompt(1, Text.STORY1_3);
             break;
         case 2:
             areaText = Text.STORY2;
-            prompts.add(new Prompt(2, Text.STORY2_1 + " Enter 1."));
-            prompts.add(new Prompt(2, Text.STORY2_2 + " Enter 2."));
+            addPrompt(2, Text.STORY2_1);
+            addPrompt(2, Text.STORY2_1);
             break;
         case 3:
             areaText = Text.STORY3;
-            prompts.add(new Prompt(3, Text.STORY3_1 + " Enter 1."));
-            prompts.add(new Prompt(3, Text.STORY3_2 + " Enter 2."));
+            addPrompt(3, Text.STORY3_1);
+            addPrompt(3, Text.STORY3_1);
             break;
         case 4:
             areaText = Text.STORY4;
-            prompts.add(new Prompt(4, Text.STORY4_1 + " Enter 1."));
-            prompts.add(new Prompt(4, Text.STORY4_2 + " Enter 2."));
+            addPrompt(4, Text.STORY4_1);
+            addPrompt(4, Text.STORY4_1);
             break;
         case 5:
             areaText = Text.STORY5;
-            prompts.add(new Prompt(999, Text.BATTLE));
+            addPrompt(999, Text.BATTLE);
             enemy.add(new Enemy("MAN-ORC", 8, 5));
             break;
         case 6:
             areaText = Text.STORY6;
-            prompts.add(new Prompt(6, Text.STORY6_1 + " Enter 1."));
-            prompts.add(new Prompt(6, Text.STORY6_2 + " Enter 2."));
+            addPrompt(6, Text.STORY6_1);
+            addPrompt(6, Text.STORY6_2);
             break;
         case 7:
             areaText = Text.STORY7;
-            prompts.add(new Prompt(7, Text.STORY7_1 + " Enter 1."));
-            prompts.add(new Prompt(7, Text.STORY7_2 + " Enter 2."));
+            addPrompt(7, Text.STORY7_1);
+            addPrompt(7, Text.STORY7_2);
+            break;
+        case 8:
+            areaText = Text.STORY8;
+            addPrompt(8, Text.STORY8_1);
+            break;
+        case 9:
+            areaText = Text.STORY9;
+            prompts.add(new Prompt(9, "You have died."));
+        case 54:
+            areaText = Text.STORY54;
+            prompts.add(new Prompt(54, "Enter 1 to continue."));
+            break;
+        case 74:
+            areaText = Text.STORY74;
+            addPrompt(74, Text.STORY74_1);
+            addPrompt(74, Text.STORY74_2);
+            addPrompt(74, Text.STORY74_3);
+            break;
+        case 94:
+            areaText = Text.STORY94;
+            addPrompt(94, "Enter 1 to continue.");
+            break;
+        case 95:
+            areaText = Text.STORY95;
+            addPrompt(95, Text.STORY95_1);
+            addPrompt(95, Text.STORY95_2);
+            break;
+        case 96:
+            areaText = Text.STORY96;
+            addPrompt(96, Text.STORY96_1);
+            addPrompt(96, Text.STORY96_2);
+            addPrompt(96, Text.STORY96_3);
             break;
         case 151:
             areaText = Text.STORY151;
-            prompts.add(new Prompt(151, Text.STORY151_1 + "Enter 1."));
-            prompts.add(new Prompt(151, Text.STORY151_2 + "Enter 2."));
+            addPrompt(151, Text.STORY151_1);
+            addPrompt(151, Text.STORY151_2);
+            break;
         case 202:
             areaText = Text.STORY202;
-            prompts.add(new Prompt(202, Text.STORY202_1 + " Enter 1."));
-            prompts.add(new Prompt(202, Text.STORY202_2 + " Enter 2."));
-            prompts.add(new Prompt(202, Text.STORY202_3 + " Enter 3."));
+            addPrompt(202, Text.STORY202_1);
+            addPrompt(202, Text.STORY202_2);
+            addPrompt(202, Text.STORY202_3);
+            break;
+        case 224:
+            areaText = Text.STORY224;
+            addPrompt(224, Text.STORY224_1);
+            addPrompt(224, Text.STORY224_2);
             break;
         case 351:
             areaText = Text.STORY351;
             enemy.add(new Enemy("First CITY GUARD", 6, 6));
             enemy.add(new Enemy("Second CITY GUARD", 7, 5));
+            break;
         case 401:
             areaText = "You died.";
-            prompts.add(new Prompt(401, "Enter 1 to restart the game."));
+            addPrompt(401, "Enter 1 to restart the game.");
+            break;
         default:
             break;
         }
+    }
+
+    public void addPrompt(int id, String text) {
+        prompts.add(new Prompt(id, text + " Enter " + count + "."));
+        count++;
     }
 
     public int getId() {
@@ -94,6 +139,7 @@ public class Area {
 
     public void removeNext(Area area) {
         nextArea.remove(area);
+        prompts.remove(findPrompt(area.getId()));
     }
 
     public ArrayList<Area> getNext() {
