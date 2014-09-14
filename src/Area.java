@@ -9,7 +9,7 @@ public class Area {
     private ArrayList<Prompt> prompts = new ArrayList<Prompt>();
 
     public Area(int num) {
-        id = num;
+        id = 5;
         initText();
     }
 
