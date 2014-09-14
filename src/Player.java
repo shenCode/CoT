@@ -127,7 +127,7 @@ public class Player {
     }
 
     public int playerRoll(int diceNum) {
-        int rollPoint = this.playerRoll(diceNum);
+        int rollPoint = Tools.rollDice(diceNum);
         return rollPoint;
     }
 
