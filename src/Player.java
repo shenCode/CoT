@@ -94,7 +94,7 @@ public class Player {
         provisions += change;
     }
 
-    public boolean textLuck() {
+    public boolean testLuck() {
         int luckPoint = this.playerRoll(2);
         this.setLuck(-1);
 
@@ -164,7 +164,7 @@ public class Player {
                         + "the creature. Would you like to use luck [Y/N]?");
                 String input = scan.nextLine();
                 if (input.equals("Y")) {
-                    if (this.textLuck()) {
+                    if (this.testLuck()) {
                         System.out.println("Extra 2 point damage to creature.");
                         enemy.setStamina(-4);
                     } else {
@@ -181,7 +181,7 @@ public class Player {
                         + "player. Would you like to use luck [Y/N]?");
                 String input = scan.nextLine();
                 if (input.equals("Y")) {
-                    if (this.textLuck()) {
+                    if (this.testLuck()) {
                         System.out.println("restore 1 point back to player.");
                         this.setStamina(-1);
                     } else {
