@@ -1,6 +1,7 @@
 public class Map {
 
     private Area[] map;
+
     public Map() {
         map = new Area[402];
         initialize();
@@ -23,7 +24,14 @@ public class Map {
         map[5].addNext(map[371]);
         map[6].addNext(map[333]);
         map[6].addNext(map[88]);
+        map[7].addNext(map[232]);
+        map[7].addNext(map[78]);
         
+        map[151].addNext(map[351]);
+        map[151].addNext(map[29]);
+        map[202].addNext(map[151]);
+        map[202].addNext(map[69]);
+        map[202].addNext(map[276]);
         map[401].addNext(map[1]);
     }
 

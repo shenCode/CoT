@@ -18,6 +18,7 @@ public class Player {
     private int provisions;
     private int gold;
     private Area currentArea;
+    private boolean[] goneTo = new boolean[402];
 
     public Player() {
         initSkill();
@@ -25,6 +26,9 @@ public class Player {
         initLuck();
         initProvisions();
         initGold();
+        for (int i = 0; i < goneTo.length; i++) {
+            goneTo[i] = false;
+        }
     }
 
     private void initSkill() {
@@ -79,14 +83,18 @@ public class Player {
     }
 
     public void setArea(Area area) {
-        area.showText();
         currentArea = area;
+        goneTo[area.getId()] = true;
         if (area.getId() == 5) {
             battle(area.getEnemy());
         }
         if (area.getId() == 7) {
             setLuck(2);
+            if (goneTo[232]) {
+                area.removeNext(232);
+            }
         }
+        area.showText();
     }
 
     public Area getCurrentArea() {
