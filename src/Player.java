@@ -14,7 +14,7 @@ public class Player {
     private final int baseStamina = 12;
     private final int baseLuck = 6;
 
-    private Scanner scan;
+    private Scanner scan = new Scanner(System.in);
     private int skill;
     private int stamina;
     private int luck;
@@ -95,8 +95,14 @@ public class Player {
     }
 
     public boolean testLuck() {
-        int luckPoint = this.playerRoll(2);
-        this.setLuck(-1);
+        int luckPoint = 0;
+        if (this.getLuck() > 0) {
+            luckPoint = this.playerRoll(2);
+            this.setLuck(-1);
+        } else {
+            System.out.println("Looks like player runs out of luck");
+            return false;
+        }        
 
         if (luckPoint <= this.getLuck()) {
             System.out.println("This is your lucky day...:)");
@@ -142,7 +148,7 @@ public class Player {
         System.out.println("The Battle is Begin...");
         Enemy enemy = null;
         if (getCurrentArea().getEnemy() != null) {
-            enemy = getCurrentArea().getEnemy();
+            enemy = e;
         }
 
         // int playerStamina = this.getStamina();
