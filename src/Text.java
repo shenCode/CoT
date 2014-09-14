@@ -397,4 +397,18 @@ public class Text {
             + "fight the guards?";
 
     public static final String STORY202_3 = "Try to bribe the guards?";
+    
+    public static final String STORY351 = "You take 10 Gold Pieces " + "\n"
+            + "out of your backpack and place them on the palm of " + "\n"
+            + "the hand outstretched before you. The old man then reaches " + "\n"
+            + "into his inner clothing and pulls out an iron key, " + "\n"
+            + "telling you that it will unlock your cell. Almost in disbelief " + "\n"
+            + "you take the key and place it in the lock. Incredibly, " + "\n"
+            + "the lock turns. You look back at the old man and ask him " + "\n"
+            + "if he wishes to escape with you. He smiles and shakes his head, " + "\n"
+            + "saying that he is happy where he is. You leave the cell and, " + "\n"
+            + "picking up your sword, climb the stairs to the floor above. " + "\n"
+            + "The two guards are relaxing over a game of cards. You wave your " + "\n"
+            + "sword in the air and charge at them. They grab their swords " + "\n"
+            + "to defend themselves and fight you one at a time.";
 }

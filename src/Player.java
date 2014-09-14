@@ -111,7 +111,9 @@ public class Player {
         currentArea = area;
         goneTo[area.getId()] = true;
         if (area.getId() == 5) {
-            battle(area.getEnemy());
+            for (int i = 0; i < area.getEnemy().size(); i++) {
+                battle(area.getEnemy().get(i));
+            }
         }
         if (area.getId() == 7) {
             setLuck(2);

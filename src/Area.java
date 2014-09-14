@@ -5,7 +5,7 @@ public class Area {
     private int id;
     private String areaText;
     private ArrayList<Area> nextArea = new ArrayList<Area>();
-    private Enemy enemy = new Enemy("", 0, 0);
+    private ArrayList<Enemy> enemy = new ArrayList<Enemy>();
     private ArrayList<Prompt> prompts = new ArrayList<Prompt>();
 
     public Area(int num) {
@@ -46,7 +46,7 @@ public class Area {
         case 5:
             areaText = Text.STORY5;
             prompts.add(new Prompt(999, Text.BATTLE));
-            enemy = new Enemy("MAN-ORC", 8, 5);
+            enemy.add(new Enemy("MAN-ORC", 8, 5));
             break;
         case 6:
             areaText = Text.STORY6;
@@ -68,6 +68,10 @@ public class Area {
             prompts.add(new Prompt(202, Text.STORY202_2 + " Enter 2."));
             prompts.add(new Prompt(202, Text.STORY202_3 + " Enter 3."));
             break;
+        case 351:
+            areaText = Text.STORY351;
+            enemy.add(new Enemy("First CITY GUARD", 6, 6));
+            enemy.add(new Enemy("Second CITY GUARD", 7, 5));
         case 401:
             areaText = "You died.";
             prompts.add(new Prompt(401, "Enter 1 to restart the game."));
@@ -130,7 +134,7 @@ public class Area {
         return null;
     }
 
-    public Enemy getEnemy() {
+    public ArrayList<Enemy> getEnemy() {
         return enemy;
     }
 }
