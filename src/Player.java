@@ -14,7 +14,7 @@ public class Player {
     private final int baseStamina = 12;
     private final int baseLuck = 6;
 
-    private Scanner scan;
+    private Scanner scan = new Scanner(System.in);
     private int skill;
     private int stamina;
     private int luck;
