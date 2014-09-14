@@ -12,6 +12,9 @@ public class Main {
         p.setArea(m.getAreaLocation(state));
         while (state != 400) {
             System.out.println("Current location: "
+                    + p.getCurrentArea().getId());
+
+            System.out.println("Current location: "
                     + p.getCurrentArea().getId());  // Test statement
             System.out.print("Make your decision: ");
             System.out.println();
