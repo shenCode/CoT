@@ -82,12 +82,11 @@ public class Player {
     }
 
     public void setStamina(int change) {
-
-        this.stamina += change;
+        stamina += change;
     }
 
     public void setGold(int change) {
-        this.gold += change;
+        gold += change;
     }
 
     public void setProvisions(int change) {
@@ -95,10 +94,10 @@ public class Player {
     }
 
     public boolean testLuck() {
-        int luckPoint = this.playerRoll(2);
-        this.setLuck(-1);
+        int luckPoint = playerRoll(2);
+        setLuck(-1);
 
-        if (luckPoint <= this.getLuck()) {
+        if (luckPoint <= getLuck()) {
             System.out.println("This is your lucky day...:)");
             return true;
         } else {
@@ -110,7 +109,7 @@ public class Player {
     public void setArea(Area area) {
         currentArea = area;
         goneTo[area.getId()] = true;
-        if (area.getId() == 5) {
+        if (area.getId() == 5 || area.getId() == 351) {
             for (int i = 0; i < area.getEnemy().size(); i++) {
                 battle(area.getEnemy().get(i));
             }
@@ -140,27 +139,23 @@ public class Player {
     public void battle(Enemy e) {
         // If lost, set area to 401.
         System.out.println("The Battle is Begin...");
-        Enemy enemy = null;
-        if (getCurrentArea().getEnemy() != null) {
-            enemy = getCurrentArea().getEnemy();
-        }
 
-        // int playerStamina = this.getStamina();
+        // int playerStamina = getStamina();
         // int enemyStamina = enemy.getStamina();
 
-        System.out.println("player: " + this.getStamina() + "\n" + "creature: "
-                + enemy.getStamina());
+        System.out.println("player: " + getStamina() + "\n" + "creature: "
+                + e.getStamina());
 
         int playerPoints = 0;
         int creaturePoints = 0;
 
         // battling when both stamina not 0
-        while (this.getStamina() > 0 && enemy.getStamina() > 0) {
+        while (getStamina() > 0 && e.getStamina() > 0) {
 
             System.out.println("Let's roll the dice...");
 
-            playerPoints = this.playerRoll(2) + this.getSkill();
-            creaturePoints = enemy.creatureRoll(2) + enemy.getSkill();
+            playerPoints = playerRoll(2) + getSkill();
+            creaturePoints = e.creatureRoll(2) + e.getSkill();
 
             System.out.println("Player's point is: " + playerPoints + "\n"
                     + "Creature's point is: " + creaturePoints);
@@ -170,46 +165,46 @@ public class Player {
                         + "the creature. Would you like to use luck [Y/N]?");
                 String input = scan.nextLine();
                 if (input.equals("Y")) {
-                    if (this.testLuck()) {
+                    if (testLuck()) {
                         System.out.println("Extra 2 point damage to creature.");
-                        enemy.setStamina(-4);
+                        e.setStamina(-4);
                     } else {
-                        enemy.setStamina(-2);
+                        e.setStamina(-2);
                     }
                 } else if (input.equals("N")) {
-                    enemy.setStamina(-2);
+                    e.setStamina(-2);
                 }
-                System.out.println("playerStamina: " + this.getStamina());
-                System.out.println("enemyStamina: " + enemy.getStamina());
+                System.out.println("playerStamina: " + getStamina());
+                System.out.println("enemyStamina: " + e.getStamina());
 
             } else if (playerPoints < creaturePoints) {
                 System.out.println("oops...creature has higher point to beat "
                         + "player. Would you like to use luck [Y/N]?");
                 String input = scan.nextLine();
                 if (input.equals("Y")) {
-                    if (this.testLuck()) {
+                    if (testLuck()) {
                         System.out.println("restore 1 point back to player.");
-                        this.setStamina(-1);
+                        setStamina(-1);
                     } else {
-                        this.setStamina(-2);
+                        setStamina(-2);
                     }
                 } else if (input.equals("N")) {
-                    this.setStamina(-2);
+                    setStamina(-2);
                 }
-                System.out.println("playerStamina: " + this.getStamina());
-                System.out.println("enemyStamina: " + enemy.getStamina());
+                System.out.println("playerStamina: " + getStamina());
+                System.out.println("enemyStamina: " + e.getStamina());
             }
 
         }
 
-        if (this.getStamina() <= 0) {
-            System.out.println("current stamina is: " + this.getStamina());
+        if (getStamina() <= 0) {
+            System.out.println("current stamina is: " + getStamina());
             System.out.println("GG...");
-            // this.setArea(new Area(401));
-        } else if (enemy.getStamina() <= 0) {
+            // setArea(new Area(401));
+        } else if (e.getStamina() <= 0) {
             // set the player next area
             System.out.println("Creature dead! Well play!!");
-            enemy.setDead();
+            e.setDead();
         }
     }
 }
