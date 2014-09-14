@@ -26,7 +26,6 @@ public class Map {
         map[6].addNext(map[88]);
         map[7].addNext(map[232]);
         map[7].addNext(map[78]);
-        
         map[151].addNext(map[351]);
         map[151].addNext(map[29]);
         map[202].addNext(map[151]);

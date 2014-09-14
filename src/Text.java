@@ -373,7 +373,7 @@ public class Text {
 
     public static final String STORY151_2 = "If you would rather "
             + "ignore the old man.";
-    
+
     public static final String STORY202 = "The guard replies " + "\n"
             + "that he will send for an escort " + "\n"
             + "to take you to Nicodemus. " + "\n"
