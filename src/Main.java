@@ -3,12 +3,14 @@ import java.util.Scanner;
 
 public class Main {
 
+    private static Scanner scan;
+
     public static void main(String[] args) {
 
         Map m = new Map();
         Player p = new Player();
         int state = 0;
-        Scanner scan = new Scanner(System.in);
+        scan = new Scanner(System.in);
         p.setArea(m.getAreaLocation(state));
         while (state != 400) {
             System.out.println("Current location: "
