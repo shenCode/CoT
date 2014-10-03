@@ -386,6 +386,46 @@ public class Text {
     public static final String STORY11_1 = "There is " + "\n"
             + "no alternative but to jump." + "\n";
 
+    public static final String STORY12 = "After a few minutes you " + "\n"
+            + "hear footsteps coming " + "\n"
+            + "down the corridor. The door opens and a man walks " + "\n"
+            + "into the room wearing nothing but a towel round his " + "\n"
+            + "fat stomach. You watch as he drops the towel and " + "\n"
+            + "lower himself gently into the tub with a loud sigh. " + "\n";
+
+    public static final String STORY12_1 = "If you wish to surprise him " + "\n"
+            + "by drawing your sword and uttering a loud 'Ahem'." + "\n";
+
+    public static final String STORY12_2 = "You would rather creep out " + "\n"
+            + "of then room back into the corridor " + "\n"
+            + "while he submerges himself" + "\n";
+
+    public static final String STORY13 = "Inspecting the scorpion you " + "\n"
+            + "see that it is a brooch. You decide to pin it " + "\n"
+            + "to your leather tunic. The brooch has magic " + "\n"
+            + "healing properties: after any battle, the brooch " + "\n"
+            + "will immediately restore 1 STAMINA point to your total. " + "\n"
+            + "What will you do next?" + "\n";
+
+    public static final String STORY13_1 = "Pick up the golden "
+            + "scorpion." + "\n";
+
+    public static final String STORY13_2 = "If you rather ignore it, " + "\n"
+            + "you may climb the stairs.";
+
+    public static final String STORY13_3 = "Leave the house "
+            + "and head north." + "\n";
+
+    public static final String STORY14 = "As soon as you pluck " + "\n"
+            + "one of the flowers you hear the noise of " + "\n"
+            + "rustling leaves. Three of the animal-shaped " + "\n"
+            + "hedges have uprooted themselves and are " + "\n"
+            + "closing in on you." + "\n";
+
+    public static final String STORY14_1 = "You have the ring." + "\n";
+
+    public static final String STORY14_2 = "You do not have the ring." + "\n";
+
     public static final String STORY54 = "You search the " + "\n"
             + "guardhouse and find 2 Gold Pieces and a merchant's " + "\n"
             + "pass permitting the holder to trade in Port Blacksand. " + "\n"

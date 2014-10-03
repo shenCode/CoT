@@ -116,6 +116,7 @@ public class Player {
         currentArea = area;
         goneTo[area.getId()] = true;
         area.showText();
+
         switch (area.getId()) {
         case 5:
             for (int i = 0; i < area.getEnemy().size(); i++) {
@@ -143,6 +144,23 @@ public class Player {
             setSkill(-1);
             if (inventory.contains("chainmailCoat")) {
                 setSkill(-2);
+            }
+        case 13:
+            inventory.add("brooch");
+            if (goneTo[273]) {
+                area.removeNext(273);
+            }
+            if (goneTo[80]) {
+                area.removeNext(80);
+            }
+            if (goneTo[334]) {
+                area.removeNext(334);
+            }
+        case 14:
+            if (inventory.contains("ringOfFire")) {
+                area.removeNext(191);
+            } else {
+                area.removeNext(237);
             }
         case 54:
             setGold(2);
@@ -249,5 +267,12 @@ public class Player {
                     + "===============================================" + "\n");
             System.out.println("Enter 1 to continue.");
         }
+        if (inventory.contains("brooch")) {
+            stamina++;
+        }
+    }
+
+    public boolean checkInventory(String item) {
+        return inventory.contains(item);
     }
 }

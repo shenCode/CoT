@@ -75,6 +75,22 @@ public class Area {
             areaText = Text.STORY11;
             prompts.add(new Prompt(11, Text.STORY11));
             break;
+        case 12:
+            areaText = Text.STORY12;
+            prompts.add(new Prompt(12, Text.STORY12_1));
+            prompts.add(new Prompt(12, Text.STORY12_2));
+            break;
+        case 13:
+            areaText = Text.STORY13;
+            prompts.add(new Prompt(13, Text.STORY13_1));
+            prompts.add(new Prompt(13, Text.STORY13_2));
+            prompts.add(new Prompt(13, Text.STORY13_3));
+            break;
+        case 14:
+            areaText = Text.STORY14;
+            prompts.add(new Prompt(14, Text.STORY14_1));
+            prompts.add(new Prompt(14, Text.STORY14_2));
+            break;
         case 54:
             areaText = Text.STORY54;
             prompts.add(new Prompt(54, "Enter 1 to continue."));

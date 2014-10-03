@@ -31,6 +31,13 @@ public class Map {
         map[10].addNext(map[212]);
         map[10].addNext(map[130]);
         map[11].addNext(map[358]);
+        map[12].addNext(map[176]);
+        map[12].addNext(map[383]);
+        map[13].addNext(map[273]);
+        map[13].addNext(map[80]);
+        map[13].addNext(map[334]);
+        map[14].addNext(map[237]);
+        map[14].addNext(map[191]);
         map[54].addNext(map[74]);
         map[74].addNext(map[95]);
         map[74].addNext(map[116]);
