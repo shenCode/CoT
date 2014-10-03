@@ -11,13 +11,10 @@ public class Main {
         Player p = new Player();
         int state = 0;
         scan = new Scanner(System.in);
-        p.setArea(m.getAreaLocation(state));
+        p.setAreaNoText(m.getAreaLocation(state));
         while (state != 400) {
             System.out.println("Current location: "
                     + p.getCurrentArea().getId());
-
-            System.out.println("Current location: "
-                    + p.getCurrentArea().getId());  // Test statement
             System.out.print("Make your decision: ");
             System.out.println();
             state = scan.nextInt();

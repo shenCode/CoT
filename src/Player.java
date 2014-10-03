@@ -111,7 +111,10 @@ public class Player {
             return false;
         }
     }
-
+    public void setAreaNoText(Area area) {
+        currentArea = area;
+        goneTo[area.getId()] = true;
+    }
     public void setArea(Area area) {
         currentArea = area;
         goneTo[area.getId()] = true;
