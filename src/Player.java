@@ -148,6 +148,7 @@ public class Player {
             if (inventory.contains("chainmailCoat")) {
                 setSkill(-2);
             }
+            break;
         case 13:
             inventory.add("brooch");
             if (goneTo[273]) {
@@ -159,21 +160,37 @@ public class Player {
             if (goneTo[334]) {
                 area.removeNext(334);
             }
+            break;
         case 14:
             if (inventory.contains("ringOfFire")) {
                 area.removeNext(191);
             } else {
                 area.removeNext(237);
             }
+            break;
+        case 15:
+            if (testLuck()) {
+                area.removeNext(298);
+            } else {
+                area.removeNext(75);
+            }
+            break;
+        case 16:
+            setGold(12);
+            setLuck(1);
+            break;
         case 54:
             setGold(2);
             inventory.add("merchantPass");
+            break;
         case 94:
             setStamina(6);
+            break;
         case 96:
             if (goneTo[319]) {
                 area.removeNext(319);
             }
+            break;
         case 351:
             setGold(-10);
             for (int i = 0; i < area.getEnemy().size(); i++) {

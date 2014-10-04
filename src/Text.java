@@ -377,6 +377,7 @@ public class Text {
     public static final String STORY11 = "The Trolls see what " + "\n"
             + "you are doing and run towards the tree. " + "\n"
             + "You are forced to leave your shield behind. " + "\n"
+            + "LOSE 1 SKILL POINT." + "\n"
             + "After climbing quickly up the tree you realize " + "\n"
             + "that you must jump a distance of two metres " + "\n"
             + "between the branch and the top of the wall. " + "\n"
@@ -425,6 +426,22 @@ public class Text {
     public static final String STORY14_1 = "You have the ring." + "\n";
 
     public static final String STORY14_2 = "You do not have the ring." + "\n";
+
+    public static final String STORY15 = "You leap over the snakes " + "\n"
+            + "and run for the door.";
+
+    public static final String STORY15_1 = "You reach the door safely" + "\n";
+
+    public static final String STORY15_2 = "One of the snakes strikes " + "\n"
+            + "out and bites you on the leg." + "\n";
+
+    public static final String STORY16 = "The bag holds 12 Gold Pieces." + "\n"
+            + " Add 1 LUCK point. " + "\n"
+            + "You leave the house quickly before the " + "\n"
+            + "owner discovers you are not who you say you are." + "\n";
+
+    public static final String STORY16_1 = "You then walk further " + "\n"
+            + "north along Stable Street." + "\n";
 
     public static final String STORY54 = "You search the " + "\n"
             + "guardhouse and find 2 Gold Pieces and a merchant's " + "\n"

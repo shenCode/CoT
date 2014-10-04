@@ -38,6 +38,9 @@ public class Map {
         map[13].addNext(map[334]);
         map[14].addNext(map[237]);
         map[14].addNext(map[191]);
+        map[15].addNext(map[75]);
+        map[15].addNext(map[298]);
+        map[16].addNext(map[333]);
         map[54].addNext(map[74]);
         map[74].addNext(map[95]);
         map[74].addNext(map[116]);
