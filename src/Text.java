@@ -435,13 +435,128 @@ public class Text {
     public static final String STORY15_2 = "One of the snakes strikes " + "\n"
             + "out and bites you on the leg." + "\n";
 
-    public static final String STORY16 = "The bag holds 12 Gold Pieces." + "\n"
-            + " Add 1 LUCK point. " + "\n"
+    public static final String STORY16 = "The bag holds 12 Gold Pieces. " + "\n"
+            + "Add 1 LUCK point. " + "\n"
             + "You leave the house quickly before the " + "\n"
             + "owner discovers you are not who you say you are." + "\n";
 
     public static final String STORY16_1 = "You then walk further " + "\n"
             + "north along Stable Street." + "\n";
+
+    public static final String STORY17 = "Walking along the arrow " + "\n"
+            + "street you see a man wearing tattered tags " + "\n"
+            + "witting in the gutter. " + "\n"
+            + "His head rests on his hands and " + "\n"
+            + "he looks thoroughly miserable." + "\n";
+
+    public static final String STORY17_1 = "If you wish to stop " + "\n"
+            + "to talk to him." + "\n";
+
+    public static final String STORY17_2 = "If you would rather " + "\n"
+            + "continue walking east." + "\n";
+
+    public static final String STORY18 = "You take aim carefully " + "\n"
+            + "and throw the knife at the leading vagabond." + "\n";
+
+    public static final String STORY18_1 = "The knife sinks deep into " + "\n"
+            + "the vagabond's chest, stopping him dead in his tracks." + "\n";
+
+    public static final String STORY18_2 = "The knife flies past its " + "\n"
+            + "target and you must fight all " + "\n"
+            + "three vagabonds with your swords" + "\n";
+
+    public static final String STORY19 = "The darts are poison-tipped.";
+
+    public static final String STORY19_1 = "Do you wish to continue " + "\n"
+            + "picking the lock?" + "\n";
+
+    public static final String STORY19_2 = "If you would rather leave " + "\n"
+            + "the room and climb the stairs to the floor above." + "\n";
+
+    public static final String STORY20 = " The pirate's pockets contain " + "\n"
+            + "nothing apart from a piece of stale bread. " + "\n"
+            + "You lave him to start a search of the wooden " + "\n"
+            + "boxes and barrels on the ship's deck" + "\n";
+
+    public static final String STORY20_1 = "You leave him to start " + "\n"
+            + "a search of the wooden boxes and " + "\n"
+            + "barrels on the ship's deck." + "\n";
+
+    public static final String STORY21 = "Looking up, you see that " + "\n"
+            + "the staircase goes all the way up to the top " + "\n"
+            + "of the tower. You stop off at the first floor " + "\n"
+            + "and walk along the landing to a door. The door " + "\n"
+            + "opens into a large room which contains a " + "\n"
+            + "comfortable, made-up bed." + "\n";
+
+    public static final String STORY21_1 = "If you wish to lock " + "\n"
+            + "the door and go to sleep for the night." + "\n";
+
+    public static final String STORY21_2 = "If you wish to " + "\n"
+            + "explore the tower further" + "\n";
+
+    public static final String STORY22 = "As you sit down at " + "\n"
+            + "the table the GOBLINS stop their quarrelling " + "\n"
+            + "and stare at you coldly. You see hatred in their " + "\n"
+            + "brown warty faces. Suddenly they stand up and" + "\n"
+            + " draw their swords. " + "\n"
+            + "You must fight them one at a time." + "\n";
+
+    public static final String STORY23 = "The man grabs " + "\n"
+            + "a wooden club from behind a " + "\n"
+            + "chair and prepares to fight you. " + "\n"
+            + "He is strong but not a good fighter." + "\n";
+
+    public static final String STORY24 = "There is another " + "\n"
+            + "shop an the left side of the street. " + "\n"
+            + "An iron grill over the window prevents you " + "\n"
+            + "seeing what kind of shop it is. " + "\n"
+            + "You try the handle on the door and it turns." + "\n";
+
+    public static final String STORY24_1 = "If you want to " + "\n"
+            + "enter the shop." + "\n";
+
+    public static final String STORY24_2 = "If you wish to continue" + "\n"
+            + " west, without looking into the shop" + "\n";
+
+    public static final String STORY25 = "You soon realize " + "\n"
+            + "you are in a stable when you see a large, " + "\n"
+            + "bare-chested man wearing a grubby white apron " + "\n"
+            + "busy at work at an open fire. He takes a red-hot " + "\n"
+            + "iron bar from the fire with his gloved hand and starts " + "\n"
+            + "to hammer it into the shape of a horseshoe on his anvil. " + "\n"
+            + "Sweat pours from his brow as he toils with the hammer. " + "\n"
+            + "Will you:" + "\n";
+
+    public static final String STORY25_1 = "Make conversation with " + "\n"
+            + "the blacksmith?" + "\n";
+
+    public static final String STORY25_2 = "Attack him with your sword?" + "\n";
+
+    public static final String STORY25_3 = "Leave him to his labours " + "\n"
+            + "and continue north?" + "\n";
+
+    public static final String STORY26 = "You sheathe your sword and " + "\n"
+            + "look round at the circle of spectators. " + "\n"
+            + "Having witnessed your excellent swordsmanship " + "\n"
+            + "each goes quietly back to his table, not wishing " + "\n"
+            + "to anger you any further. The innkeeper apologizes " + "\n"
+            + "for his unfriendliness and invites you to sit at the " + "\n"
+            + "bar and enjoy a drink at his expense. You ask him if " + "\n"
+            + "he knows the whereabouts of Nicodemus. The Innkeeper " + "\n"
+            + "frowns and looks at you inquiringly. Then he says, " + "\n"
+            + "'I don¡¯t know what you want from that wily old wizard. " + "\n"
+            + "He keeps himself to himself and lives alone in a small " + "\n"
+            + "hut under Singing Bridge. Keep walking north along " + "\n"
+            + "Market Street, through the market-place, and " + "\n"
+            + "you'll come to a bridge that crosses Catfish River " + "\n"
+            + "and leads to the old part of the city and the harbour. " + "\n"
+            + "Nicodemus won't talk to you and he knows enough magic " + "\n"
+            + "to keep event the toughest away from his door." + "\n";
+
+    public static final String STORY26_1 = "You tell the innkeeper " + "\n"
+            + "not to be so discourteous to strangers " + "\n"
+            + "next time, and leave the tavern to head north." + "\n";
 
     public static final String STORY54 = "You search the " + "\n"
             + "guardhouse and find 2 Gold Pieces and a merchant's " + "\n"

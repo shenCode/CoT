@@ -64,45 +64,102 @@ public class Area {
             break;
         case 9:
             areaText = Text.STORY9;
-            prompts.add(new Prompt(9, "You have died."));
+            addPrompt(9, "You have died.");
             break;
         case 10:
             areaText = Text.STORY10;
-            prompts.add(new Prompt(10, ""));
+            addPrompt(999, Text.BATTLE);
             enemy.add(new Enemy("CITY GUARD", 8, 7));
             break;
         case 11:
             areaText = Text.STORY11;
-            prompts.add(new Prompt(11, Text.STORY11));
+            addPrompt(11, Text.STORY11);
             break;
         case 12:
             areaText = Text.STORY12;
-            prompts.add(new Prompt(12, Text.STORY12_1));
-            prompts.add(new Prompt(12, Text.STORY12_2));
+            addPrompt(12, Text.STORY12_1);
+            addPrompt(12, Text.STORY12_2);
             break;
         case 13:
             areaText = Text.STORY13;
-            prompts.add(new Prompt(13, Text.STORY13_1));
-            prompts.add(new Prompt(13, Text.STORY13_2));
-            prompts.add(new Prompt(13, Text.STORY13_3));
+            addPrompt(13, Text.STORY13_1);
+            addPrompt(13, Text.STORY13_2);
+            addPrompt(13, Text.STORY13_3);
             break;
         case 14:
             areaText = Text.STORY14;
-            prompts.add(new Prompt(14, Text.STORY14_1));
-            prompts.add(new Prompt(14, Text.STORY14_2));
+            addPrompt(14, Text.STORY14_1);
+            addPrompt(14, Text.STORY14_2);
             break;
         case 15:
             areaText = Text.STORY15;
-            prompts.add(new Prompt(15, Text.STORY15_1));
-            prompts.add(new Prompt(15, Text.STORY15_2));
+            addPrompt(15, Text.STORY15_1);
+            addPrompt(15, Text.STORY15_2);
             break;
         case 16:
-            areaText = Text.STORY15;
-            prompts.add(new Prompt(15, Text.STORY16_1));
+            areaText = Text.STORY16;
+            addPrompt(16, Text.STORY16_1);
             break;
+        case 17:
+            areaText = Text.STORY17;
+            addPrompt(17, Text.STORY17_1);
+            addPrompt(17, Text.STORY17_2);
+            break;
+        case 18:
+            areaText = Text.STORY18;
+            addPrompt(18, Text.STORY18_1);
+            addPrompt(18, Text.STORY18_2);
+            break;
+        case 19:
+            areaText = Text.STORY19;
+            addPrompt(19, Text.STORY19_1);
+            addPrompt(19, Text.STORY19_2);
+            break;
+        case 20:
+            areaText = Text.STORY20;
+            addPrompt(20, Text.STORY20_1);
+            break;
+        case 21:
+            areaText = Text.STORY21;
+            addPrompt(21, Text.STORY21_1);
+            addPrompt(21, Text.STORY21_2);
+            break;
+        case 22:
+            areaText = Text.STORY22;
+            addPrompt(999, Text.BATTLE);
+            enemy.add(new Enemy("First GOBLIN", 4, 5));
+            enemy.add(new Enemy("Second GOBLIN", 5, 5));
+            break;
+        case 23:
+            areaText = Text.STORY23;
+            addPrompt(999, Text.BATTLE);
+            enemy.add(new Enemy("SILVERSMITH", 4, 8));
+            break;
+        case 24:
+            areaText = Text.STORY24;
+            addPrompt(24, Text.STORY24_1);
+            addPrompt(24, Text.STORY24_2);
+            break;
+        case 25:
+            areaText = Text.STORY25;
+            addPrompt(25, Text.STORY25_1);
+            addPrompt(25, Text.STORY25_2);
+            addPrompt(25, Text.STORY25_3);
+            break;
+        case 26:
+            areaText = Text.STORY26;
+            addPrompt(26, Text.STORY26_1);
+            break;
+        default:
+            initText2(id);
+        }
+    }
+
+    public void initText2(int id) {
+        switch(id) {
         case 54:
             areaText = Text.STORY54;
-            prompts.add(new Prompt(54, "Enter 1 to continue."));
+            addPrompt(54, "Enter 1 to continue.");
             break;
         case 74:
             areaText = Text.STORY74;
@@ -145,10 +202,6 @@ public class Area {
             areaText = Text.STORY351;
             enemy.add(new Enemy("First CITY GUARD", 6, 6));
             enemy.add(new Enemy("Second CITY GUARD", 7, 5));
-            break;
-        case 401:
-            areaText = "You died.";
-            addPrompt(401, "Enter 1 to restart the game.");
             break;
         default:
             break;

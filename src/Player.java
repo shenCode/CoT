@@ -104,7 +104,19 @@ public class Player {
         setLuck(-1);
 
         if (luckPoint <= getLuck()) {
-            System.out.println("This is your lucky day...:)");
+            System.out.println("This is your lucky day...");
+            return true;
+        } else {
+            System.out.println("This is NOT your lucky day...");
+            return false;
+        }
+    }
+
+    public boolean testSkill() {
+        int skillPoint = playerRoll(2);
+
+        if (skillPoint <= getSkill()) {
+            System.out.println("This is your lucky day...");
             return true;
         } else {
             System.out.println("This is NOT your lucky day...");
@@ -133,6 +145,8 @@ public class Player {
             }
         case 8:
             setLuck(2);
+        case 9:
+            Main.endGame();
         case 10:
             for (int i = 0; i < area.getEnemy().size(); i++) {
                 battle(area.getEnemy().get(i));
@@ -178,6 +192,30 @@ public class Player {
         case 16:
             setGold(12);
             setLuck(1);
+            break;
+        case 18:
+            if (testSkill()) {
+                area.removeNext(225);
+            } else {
+                area.removeNext(102);
+            }
+            break;
+        case 19:
+            setStamina(-4);
+            setSkill(-1);
+            if (stamina <= 0) {
+                Main.endGame();
+            }
+            break;
+        case 22:
+            for (int i = 0; i < area.getEnemy().size(); i++) {
+                battle(area.getEnemy().get(i));
+            }
+            break;
+        case 23:
+            for (int i = 0; i < area.getEnemy().size(); i++) {
+                battle(area.getEnemy().get(i));
+            }
             break;
         case 54:
             setGold(2);
@@ -287,7 +325,9 @@ public class Player {
                     + "===============================================" + "\n");
             System.out.println("Enter 1 to continue.");
         }
-        if (inventory.contains("brooch")) {
+
+        // Text 13. After battle if brooch, stamina increase by 1.
+        if (checkInventory("brooch")) {
             stamina++;
         }
     }
